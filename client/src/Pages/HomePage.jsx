@@ -1,6 +1,5 @@
-import React from "react";
 import NavBar from "../components/NavBar";
-
+import "../styles/HomePage.css"
 
 function HomePage(){
     return(
@@ -9,29 +8,29 @@ function HomePage(){
             <main className="h-72 px-24 pt-10">
                 <h2 className="mb-[4%] text-center text-3xl font-semibold">PROGRAMAS DE INGENIERÍA</h2>
                 <div className="grid grid-cols-3 grid-rows-2 gap-6">
-                <a class="bg-bio img-carrera" href="#">
-                    <div class="overlay"></div>
-                    <span class="text">BIOINGENIERÍA</span>
+                <a className="bg-bio img-carrera" href="#">
+                    <div className="overlay"></div>
+                    <span className="text">BIOINGENIERÍA</span>
                 </a>
-                <a class="bg-comercial img-carrera" href="#">
-                    <div class="overlay"></div>
-                    <span class="text">INGENIERÍA COMERCIAL</span>
+                <a className="bg-comercial img-carrera" href="#">
+                    <div className="overlay"></div>
+                    <span className="text">INGENIERÍA COMERCIAL</span>
                 </a>
-                <a class="bg-sistemas img-carrera" href="#">
-                    <div class="overlay"></div>
-                    <span class="text">INGENIERÍA DE SISTEMAS</span>
+                <a className="bg-sistemas img-carrera" href="#">
+                    <div className="overlay"></div>
+                    <span className="text">INGENIERÍA DE SISTEMAS</span>
                 </a>
-                <a class="bg-electronica img-carrera" href="#">
-                    <div class="overlay"></div>
-                    <span class="text">INGENIERÍA ELECTRÓNICA</span>
+                <a className="bg-electronica img-carrera" href="#">
+                    <div className="overlay"></div>
+                    <span className="text">INGENIERÍA ELECTRÓNICA</span>
                 </a>
-                <a class="bg-energias img-carrera" href="#">
-                    <div class="overlay"></div>
-                    <span class="text">INGENIERÍA EN ENERGÍAS</span>
+                <a className="bg-energias img-carrera" href="#">
+                    <div className="overlay"></div>
+                    <span className="text">INGENIERÍA EN ENERGÍAS</span>
                 </a>
-                <a class="bg-industrial img-carrera" href="#">
-                    <div class="overlay"></div>
-                    <span class="text">INGENIERÍA INDUSTRIAL</span>
+                <a className="bg-industrial img-carrera" href="#">
+                    <div className="overlay"></div>
+                    <span className="text">INGENIERÍA INDUSTRIAL</span>
                 </a>
                 </div>
             </main>

@@ -1,4 +1,3 @@
-import React from "react";
 import LogoUSC from "../assets/LogoUSC2.png"
 
 function LoginPage(){
