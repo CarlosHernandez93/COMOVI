@@ -35,9 +35,9 @@ function UserManagement(){
     }
 
     return(
-        <>
+        <div className="">
             <NavBar/>
-            <div className="h-screen flex flex-col items-center mt-14">
+            <div className="h-screen flex flex-col items-center mt-14 ">
                 <div className="w-[40%]">
                     <p className="text-xl mb-3">Accion a realizar:</p>
                     <Select 
@@ -50,8 +50,7 @@ function UserManagement(){
                 </div>
                 {component}
             </div>
-
-        </>
+        </div>
     )
 }
 

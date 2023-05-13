@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {Form, Formik} from "formik"
-import { searchUser } from "../api/users.api";
+import { searchUser, } from "../api/users.api";
 import {Toaster, toast} from 'react-hot-toast'
 
 function SearchUser(){

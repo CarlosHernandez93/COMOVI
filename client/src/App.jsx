@@ -8,15 +8,13 @@ import UserManagement from "./pages/UserManagement.jsx";
 function App() {
   
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/login" element={<LoginPage/>  } />
-        <Route path="/register" element={<SignUpPage/>} />
-        <Route path="/users" element={<UserManagement/>} />
-        <Route path="*" element={<NotFoundPage/>}/>
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage/>} />
+      <Route path="/login" element={<LoginPage/>  } />
+      <Route path="/register" element={<SignUpPage/>} />
+      <Route path="/users" element={<UserManagement/>} />
+      <Route path="*" element={<NotFoundPage/>}/>
+    </Routes>
   )
 }
 
