@@ -1,4 +1,7 @@
 import { usersTable } from "../models/users.model.js"
+import passport from "passport"
+
+const CLIENT_URL = 'http://localhost:5173/'
 
 export const createUser = async (req, res) =>{
     try {
@@ -98,4 +101,27 @@ export const updateUser = async(req, res) =>{
             message: error.message
         })
     }
+}
+
+export const loginFailed = async(req, res) =>{
+    res.status(401).json({
+        success: false,
+        message: 'Ocurrio un error en la autenticacion'
+    })
+}
+
+export const loginSuccessful = async(req, res) =>{
+    if(req.user){
+        res.status(200).json({
+            success: true,
+            message: 'La autenticacion fue exitosa',
+            user: req.user,
+            cookies: req.cookies
+        })
+    }
+}
+
+export const logOut = async(req,res) =>{
+    req.logOut()
+    res.redirect(CLIENT_URL)
 }

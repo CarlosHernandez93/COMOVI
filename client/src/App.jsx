@@ -4,6 +4,7 @@ import LoginPage from "./pages/LoginPage.jsx";
 import SignUpPage from "./pages/SignUpPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import UserManagement from "./pages/UserManagement.jsx";
+import MonitoriaPage from './pages/MonitoriaPage.jsx';
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
       <Route path="/login" element={<LoginPage/>  } />
       <Route path="/register" element={<SignUpPage/>} />
       <Route path="/users" element={<UserManagement/>} />
+      <Route path="/monitorias" element={<MonitoriaPage/>} />
       <Route path="*" element={<NotFoundPage/>}/>
     </Routes>
   )

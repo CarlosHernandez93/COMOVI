@@ -11,7 +11,7 @@ function NavBar(){
             <div className="grow text-right">
                 <Link className="text-[#172072] bg-white mr-7 p-2 rounded hover:bg-[#dcdcdc] font-medium" to="/login">Iniciar Sesion</Link>
                 <Link className="text-[#172072] bg-white p-2 rounded hover:bg-[#dcdcdc] font-medium" to="/register">Registrar</Link>
-                <Link className="text-[#172072] bg-white p-2 rounded hover:bg-[#dcdcdc] font-medium" to="/users">Usuarios</Link>
+                {/* <Link className="text-[#172072] bg-white p-2 rounded hover:bg-[#dcdcdc] font-medium" to="/users">Usuarios</Link> */}
             </div>
         </header>
     );
